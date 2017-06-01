@@ -1,0 +1,14 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<p id='notice'><%= notice %></p>
+<p>Create New User</P>
+<%= form_tag :action => 'home' do %>
+Username:  <%= text_field_tag 'username', @myUser %> </br>
+Email:     <%= email_field_tag 'email', 'email@example.com'%></br>
+Password:  <%= password_field_tag 'password', nil, maxlength: 12 %></br>
+<%= submit_tag 'Create' %>
+
+<% end %>
+
+
+

@@ -1,0 +1,19 @@
+<table bgcolor='wheat'>
+<tr>
+<td width='20%' align='left'> 
+<td width='60%' align='center'><h1>My Sports Teams</h1></td>
+<td width='10%' align='center'><h3><%= link_to "Login", home_login_path, class: 'menuItem' %> </h3></td>
+<td width='10%' align='center'><h3><%= link_to "Logout", home_logout_path, class: 'menuItem' %> </h3></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width='100%'>
+<%= link_to "Home", home_home_path, class: 'menuItem' %> 
+<%= link_to "Dataset Info", sports_teams_path, class: 'menuItem' %>
+<%= link_to "Browse Data", "", class: 'menuItem' %>
+<%= link_to "Search Data", "", class: 'menuItem' %>
+</td>
+</tr>
+</table>

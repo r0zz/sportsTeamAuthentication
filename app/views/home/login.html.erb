@@ -1,0 +1,8 @@
+<p>THIS IS MY LOGIN PAGE</P>
+<p id='notice'><%= notice %></p>
+<%= form_tag :action => 'login' do %>
+Username: <%= text_field_tag 'username', @myUser %> </br>
+Password: <%= password_field_tag 'password', nil, maxlength: 12 %></br>
+<%= submit_tag 'login' %>
+<% end %>
+
